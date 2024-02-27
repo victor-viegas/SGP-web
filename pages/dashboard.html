@@ -2,9 +2,14 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="./../styles/dashboard.css">
     <link rel="stylesheet" href="./../styles/sidebar.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--importação do amCharts-->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Controle</title>
@@ -107,10 +112,13 @@
                 <i class='bx bx-menu'></i>
                 <span class="text">Menu Lateral</span>
             </div>
+            <div class="container">
+                <div id="chartdiv"></div>
+            </div>
         </section>
-        <div class="one"></div>
     </main>
     <script src="./../js/sidebar.js"></script>
+    <script src="./../js/chart.js"></script>
     <footer></footer>
 </body>
 
