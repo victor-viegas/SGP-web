@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 </head>
+
 <body>
     <header></header>
     <main>
-        <div class="sidenav">
-            <a href="#dashboard">Painel de Controle</a>
+        <div class="slidebar close">
+            <!--logo do menu lateral-->
+            <div class="logo-details">
+                <i class='bx bxs-book-reader' style='color:#d3dae3'></i>
+                <span class="logo_name">SGP</span>
+            </div>
+            <!--opções do menu lateral-->
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-pie-chart-alt-2' style='color:#d3dae3'></i>
+                        <span class="link_name">Painel de Controle</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Projetos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!--opção do menu com sub menu-->
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-spreadsheet' style='color:#d3dae3'></i>
+                            <span class="link_name">Projetos</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <!--sub menu da opção projetos do menu lateral-->
+                    <ul class="sub-menu">
+                        <li><a href="#">Cadastrar Projetos</a></li>
+                        <li><a href="#">Listar Projetos</a></li>
+                        <li><a href="#">Editar Lista</a></li>
+                        <li><a href="#">Backup</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bxs-user' style='color:#d3dae3'></i>
+                            <span class="link_name">Funcionarios</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#">Cadastrar Funcionarios</a></li>
+                        <li><a href="#">Listar Funcionarios</a></li>
+                        <li><a href="#">Editar Lista</a></li>
+                        <li><a href="#">Backup</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bxs-group' style='color:#d3dae3'></i>
+                            <span class="link_name">Departamentos</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="icon-link">
+                        <li><a href="#">Cadastrar Departamento</a></li>
+                        <li><a href="#">Listar Departamentos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-calendar' style='color:#d3dae3'></i>
+                        <span class="link_name">Calendario</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <!--<img src="image/profile.jpg" alt="profileImg">-->
+                        </div>
+                        <div class="name-job">
+                            <div class="profile_name">Victor Rafaeel</div>
+                            <div class="job">função</div>
+                        </div>
+                        <i class='bx bx-log-out'></i>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
     <footer></footer>
 </body>
+
 </html>
