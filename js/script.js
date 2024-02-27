@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(){
     loginButton.addEventListener("click", function(){
         if(userInput.value.trim()== ""){
             alert("PREENCHA OS CAMPOS CORRETAMENTE!");
+        }else{
+            window.location.href = "./../pages/dashboard.html";
         }
     })
 })
