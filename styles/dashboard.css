@@ -2,9 +2,10 @@
   height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #chartdiv {
-    width: 100%;
+    width: 95%;
     height: 650px;
   }
