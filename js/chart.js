@@ -4,11 +4,17 @@ am5.ready(function () {
     // https://www.amcharts.com/docs/v5/getting-started/#Root_element
     var root = am5.Root.new("chartdiv");
 
+    var myTheme = am5.Theme.new(root);
+
+    myTheme.rule("Label").setAll({
+        fill: am5.color(0xd3dae3)
+    });
 
     // Set themes
     // https://www.amcharts.com/docs/v5/concepts/themes/
     root.setThemes([
-        am5themes_Animated.new(root)
+        am5themes_Animated.new(root),
+        myTheme
     ]);
 
     // Create chart
@@ -26,10 +32,15 @@ am5.ready(function () {
         alignLabels: false
     }));
 
+    series.get("colors").set("colors", [
+        am5.color(0x087f8c),
+        am5.color(0xe05256)
+    ]);
+
     series.labels.template.setAll({
         textType: "circular",
         centerX: 0,
-        centerY: 0
+        centerY: 0,
     });
 
 
