@@ -2,9 +2,14 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="./../styles/dashboard.css">
     <link rel="stylesheet" href="./../styles/sidebar.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--importação do amCharts-->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Controle</title>
@@ -27,11 +32,11 @@
                         <span class="link_name">Painel de Controle</span>
                     </a>
                     <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">Projetos</a></li>
+                        <li><a class="link_name" href="#">Painel de Controle</a></li>
                     </ul>
                 </li>
+                <!--opção projetos do menu com sub menu-->
                 <li>
-                    <!--opção do menu com sub menu-->
                     <div class="icon-link">
                         <a href="#">
                             <i class='bx bx-spreadsheet' style='color:#d3dae3'></i>
@@ -47,6 +52,7 @@
                         <li><a href="#">Backup</a></li>
                     </ul>
                 </li>
+                <!--opção funcionarios do menu com sub menu-->
                 <li>
                     <div class="icon-link">
                         <a href="#">
@@ -55,6 +61,7 @@
                         </a>
                         <i class='bx bxs-chevron-down arrow'></i>
                     </div>
+                    <!--sub menu da opção funcionarios do menu lateral-->
                     <ul class="sub-menu">
                         <li><a href="#">Cadastrar Funcionarios</a></li>
                         <li><a href="#">Listar Funcionarios</a></li>
@@ -62,6 +69,7 @@
                         <li><a href="#">Backup</a></li>
                     </ul>
                 </li>
+                <!--opção departamentos do menu com sub menu-->
                 <li>
                     <div class="icon-link">
                         <a href="#">
@@ -70,17 +78,20 @@
                         </a>
                         <i class='bx bxs-chevron-down arrow'></i>
                     </div>
+                    <!--sub menu da opção departamentos do menu lateral-->
                     <ul class="sub-menu">
                         <li><a href="#">Cadastrar Departamento</a></li>
                         <li><a href="#">Listar Departamentos</a></li>
                     </ul>
                 </li>
+                <!--opção calendario do menu com sub menu-->
                 <li>
                     <a href="#">
                         <i class='bx bx-calendar' style='color:#d3dae3'></i>
                         <span class="link_name">Calendario</span>
                     </a>
                 </li>
+                <!--perfil do usuario-->
                 <li>
                     <div class="profile-details">
                         <div class="profile-content">
@@ -95,15 +106,20 @@
                 </li>
             </ul>
         </div>
+        <!--botão do menu-->
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu'></i>
-                <span class="text">Menu Lateral</span>
+                <span class="text">Grafico de Projetos</span>
+            </div>
+            <!--grafico-->
+            <div class="container">
+                <div id="chartdiv"></div>
             </div>
         </section>
-        <div class="one"></div>
     </main>
     <script src="./../js/sidebar.js"></script>
+    <script src="./../js/chart.js"></script>
     <footer></footer>
 </body>
 
