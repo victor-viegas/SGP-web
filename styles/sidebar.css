@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+main {
+    background: #383c4a;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -14,6 +18,7 @@
     background: #383c4a;
     z-index: 100;
     transition: all 0.8s ease;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .3);
 }
 
 .sidebar.close {
@@ -66,7 +71,7 @@
 .sidebar .nav-links li {
     position: relative;
     list-style: none;
-    transition: all 0.4s ease;
+    transition: all 0.7s ease;
 }
 
 .sidebar .nav-links li:hover {
@@ -113,7 +118,7 @@
     font-size: 18px;
     font-weight: 400;
     color: #fff;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .sidebar.close .nav-links li a .link_name {
@@ -247,7 +252,7 @@
 
 .home-section {
     position: relative;
-    background: transparent;
+    background: #383c4a;
     height: 100vh;
     left: 260px;
     width: calc(100% - 260px);
@@ -267,7 +272,7 @@
 
 .home-section .home-content .bx-menu,
 .home-section .home-content .text {
-    color: #11101d;
+    color: #d3dae3;
     font-size: 35px;
 }
 
