@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pr-bt">
 <head>
-    <link rel="stylesheet" href="./../styles/dashboard.css">
     <link rel="stylesheet" href="./../styles/sidebar.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!--importação do amCharts-->
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Controle</title>
+    <title>Edição de Projetos</title>
 </head>
-
 <body>
     <main>
         <div class="sidebar close">
@@ -26,12 +20,12 @@
             <!--opções do menu lateral-->
             <ul class="nav-links">
                 <li>
-                    <a href="#">
+                    <a href="./dashboard.html">
                         <i class='bx bxs-pie-chart-alt-2' style='color:#d3dae3'></i>
                         <span class="link_name">Painel de Controle</span>
                     </a>
                     <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">Painel de Controle</a></li>
+                        <li><a class="link_name" href="./dashboard.html">Painel de Controle</a></li>
                     </ul>
                 </li>
                 <!--opção projetos do menu com sub menu-->
@@ -47,7 +41,7 @@
                     <ul class="sub-menu">
                         <li><a href="./project-register.html">Cadastrar Projetos</a></li>
                         <li><a href="./project-list.html">Listar Projetos</a></li>
-                        <li><a href="./project-edit.html">Editar Lista</a></li>
+                        <li><a href="#">Editar Lista</a></li>
                         <li><a href="./project-backup.html">Backup</a></li>
                     </ul>
                 </li>
@@ -112,7 +106,7 @@
         <section class="home-section">
             <div class="home-content">
                 <i class='bx bx-menu'></i>
-                <span class="text">Grafico de Projetos</span>
+                <span class="text">Edição de Projetos</span>
             </div>
             <!--grafico-->
             <div class="container">
@@ -121,7 +115,6 @@
         </section>
     </main>
     <script src="./../js/sidebar.js"></script>
-    <script src="./../js/chart.js"></script>
+    </main>
 </body>
-
 </html>
