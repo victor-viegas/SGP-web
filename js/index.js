@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const passwordInput = document.getElementById("password-input");
     
     loginButton.addEventListener("click", function(){
-        if(userInput.value.trim()== ""){
+        if(userInput.value.trim() == ""){
             alert("PREENCHA OS CAMPOS CORRETAMENTE!");
         }else{
             window.location.href = "./../pages/dashboard.html";

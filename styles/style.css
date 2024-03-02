@@ -46,11 +46,14 @@ input{
 input:focus{
     outline: none;
 }
-#checkbox-input{
+.forgot-password{
     display: flex;
+    padding-left:50px;
+}
+#checkbox-input{
     width: 15px;
     margin: 0;
-    margin-left: 45px;
+    margin-right: 7px;
 }
 button{
     width: 350px;
